@@ -1,0 +1,491 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --mainbackground:#f5a338;
+    --darkorange:#d92e12;
+    --lightorange:#ff6347;
+    --mainfont:"Corben", serif;
+    --secondaryfont:"Satisfy", cursive;
+    --try:#6F4E37
+}
+
+    .maincontainer{
+      padding: 10px;
+      width: 100%;
+      background-color: var(--mainbackground);
+       
+    }
+
+   .maincontainer .header{
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      width: 65%;
+      position: fixed;
+      z-index: 999;
+      backdrop-filter: blur(10px);
+      top: -7px;
+   }
+
+    .maincontainer .header .logo{
+        display: flex;
+        width: 5%;
+        height: 50px;
+        margin-left: 50px;
+        margin-top: 50px;
+     }
+
+     .maincontainer .header .logo #imglogo{
+      border-radius: 5px;
+
+     }
+
+   .maincontainer .header .logo h1{
+        color: #006b3e;
+        margin-left: 15px;
+        margin-top: 2px;
+        font-family: var(--secondaryfont);
+     }
+
+      .maincontainer .header .logo .hline{
+      position: absolute;
+      left: 250px;
+      top: 40px;
+      width: 1px;
+      height: 70px;
+      background-color:#006b3e;
+     }
+
+
+   .maincontainer .header .search{
+      display: flex;
+      align-items: left;
+      gap: 10px;
+      margin-top: 70px;
+    }
+
+   
+     .maincontainer .header .search i{
+        color: var(--mainfont);
+        margin-left: 400px ;
+     }
+
+      .maincontainer .header .search #searchText{
+        background-color:var(--mainbackground);
+        color: #006b3e;
+        border-radius: 5px;
+        padding-left: 10px;
+        font-family: var(--secondaryfont);
+     }
+
+     .maincontainer .header label  i ,
+       .maincontainer .header #checkd {
+         display:none ;
+         position: absolute; 
+         left: 500px;
+         top: 10px;
+      
+     }
+
+     .maincontainer .header ul{
+        display: flex;
+        /* justify-content: space-between; */
+        margin-top: 60px;
+        list-style: none;
+        padding-top: 10px;
+      }
+
+    .maincontainer .header ul li a{
+        color:#006b3e;
+        margin-right: 20px;
+        margin-left: 15px;
+        text-decoration: none;
+        font-family: var(--secondaryfont);
+        font-size: 25px;
+        font-weight: bold;
+        transition: 2s;
+          }
+
+          .maincontainer .header ul li a:hover, 
+          .maincontainer .header ul .active a {
+            color: #663b02 ;
+          }
+
+          .maincontainer .content .first {
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            margin-top: 350px;
+            left: -350px;
+            transition: 8s;
+          }
+
+              @keyframes floatImage {
+  0% {
+    transform: translate(-20px, 60px);
+  }
+  50% {
+    transform: translate(-60px, -120px); 
+  }
+  100% {
+    transform: translate(-20px, 60px);
+  }
+}
+
+
+          .maincontainer .content .moveimg{
+            width: 400px;
+            height: 500px;
+            /* display: flex; */
+            position: absolute;
+            right: -300px;
+            border-radius: 30%;
+            top : -150px ;
+            animation: floatImage 4s ease-in-out infinite;
+          }
+
+          
+          
+
+           .maincontainer .content{
+            width: 100%;
+            background-color:#FFF6E5;
+            padding:5vh 3%;
+            margin-top: 120px;
+            border-radius: 30px;
+          }
+
+           .maincontainer .content h2 {
+            position: relative;
+            left: 510px;
+            color: #f5a338;
+            font-family: var(--secondaryfont);
+            font-size: 40px;
+         }
+
+
+          .maincontainer .content .banner{
+            display: flex; 
+            position: absolute;
+            left: 350px;
+          }
+
+           .maincontainer .content .banner span {
+             color:#130401; 
+             margin-left: 40px;
+             font-size: 30px;
+          }
+
+           .maincontainer .content .banner2{
+            display: flex; 
+          }
+
+
+           .maincontainer .content .banner2 span {
+             color:#130401; 
+             margin-left: 40px;
+             font-size: 30px;
+          }
+
+          .maincontainer .content .banner .bp1 {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            margin-top: -180px;
+          }
+
+          .maincontainer .content .banner .p1 {
+            font-family: var(--secondaryfont);
+            color: #f5a338;
+            position: relative;
+            left: 30px;
+            margin-top: -250px;
+            font-size: 15px;
+          }
+
+          .maincontainer .content .banner .bp2 {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            margin-top: 100px;
+            margin-left: 210px;
+          }
+
+          .maincontainer .content .banner2 .p1 {
+            font-family: var(--secondaryfont);
+            color: #f5a338;
+            position: relative;
+            left: 30px;
+            margin-top: 30px;
+            font-size: 15px;
+          }
+
+          .maincontainer .content .banner2 .bp1 {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            margin-top: 100px;
+            
+          }
+
+            .maincontainer .content .banner2 .bp2 {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            margin-top: 100px;
+            position: relative;
+            left: 280px;
+          }
+
+
+
+         
+     .maincontainer .bground {
+        position: relative;
+        background-image: url(../images/img/coffee-bliss-savoring-the-aromatic-symphony-of-splashing-beans-generative-ai-free-photo.jpg);
+        width: 100%;
+        height: 300px;
+        background-size: 100% 100%;
+        border-radius: 30px;
+        background-color: #f5a338;
+     }
+
+     .maincontainer .bground .txt {
+       position: relative;
+       left: 900px;
+       color: #293a00;
+       font-size: 20px;
+       font-weight: bold;
+       font-family: var(--secondaryfont);
+       margin-top: 70px;
+
+     }
+
+     .maincontainer .bground .txt  p{
+        position: relative;
+        left: 40px;
+        top: 30px;
+     }
+
+      .maincontainer .bground .txt  .p2{
+        position: relative;
+        left: -70px;
+        top: 10px;
+     }
+
+
+     .maincontainer .bground .txt .sign {
+      background-color:rgb(238, 213, 180);
+     }
+
+     .maincontainer .bground .txt button {
+        background-color:#f5a338;
+        border-radius: 5px;
+        color: #006b3e;
+        margin-top: 10px;
+     }
+
+        .maincontainer .footer {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            background-color:#5C3A21;
+            padding:5vh 3%;
+            margin-top: 10px;
+            border-radius: 30px;
+            font-family: var(--secondaryfont);
+            font-size: 20px;
+            color: #FFF6E5;
+             }
+
+             .maincontainer .footer .icon h5 {
+              color: #FFF6E5;
+             }
+
+             .maincontainer .footer .icon {
+              /* display: flex;
+              flex-direction: row; */
+              position: absolute;
+              right: 100px;
+             }
+
+             
+.footer .face {
+  color: #1877f2
+}
+     
+.footer .twitter {
+  color: #1da1f2;
+}
+
+.footer .insta {
+  color : radial-gradient(circle at 30% 30%, #feda75, #d62976, #962fbf, #4f5bd5)
+}
+
+.footer .tiktok {
+  color: #010101;
+}
+
+@media (max-width: 1310px) {
+  .maincontainer .header {
+    flex-wrap: wrap;
+    backdrop-filter: none;
+  }
+
+  .maincontainer .header .logo {
+    width: 20%;
+  }
+
+  .maincontainer .header .search {
+    width: 50%;
+  }
+
+  .maincontainer .header ul {
+    justify-content: space-between;
+    margin:10px 250px ;
+  }
+   .maincontainer .content {
+    margin-top: 220px;
+  }
+
+  .maincontainer .content .bground .txt {
+    left:500px;
+  }
+}
+
+@media (max-width:1100px) {
+    .maincontainer .header {
+    flex-wrap: wrap;
+    backdrop-filter: none;
+     }
+
+     .maincontainer .content h2 {
+       left: 400px;
+     }
+}
+
+@media (max-width:1024px) {
+   .maincontainer .header {
+    backdrop-filter: none;
+  }
+
+   .maincontainer .header .logo .hline{
+    display: none;
+  }
+
+   .maincontainer .header .search {
+    order: 6;
+    width: 90%;
+    flex-direction: row;
+    align-items: left;
+    justify-content:flex-start ;
+    gap: 5px;
+    margin-top: 250px;
+    padding-bottom: 20px;
+    position: absolute;
+    right: 400px;
+  }
+
+  .maincontainer .header {
+    position: relative;
+  }
+
+
+  .maincontainer .header ul{
+    position: absolute;
+    top: 90px;
+    left: -10px;
+    width: 70%;
+    background-color: rgba(255, 235, 205, 0.51);
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    box-shadow: 5px 5px 5px #332d25;
+    border-radius: 20px 0 0 20px;
+    transition: 1s;  
+    transform-origin: right;
+    transform: rotateY(90deg);
+    
+}
+
+.maincontainer .header ul li {
+  width: 80%;
+  font-size:20px;
+  border-bottom: 1px solid #2f31312d;
+}
+
+.maincontainer .header ul li  a{
+  padding-left: 350px;
+}
+
+.maincontainer .header label i{
+  display:  inline-block;
+  color: rgb(255, 255, 255);
+  font-size: 35px;
+  position: relative;
+  left: 500px;
+  top: 35px;
+}
+
+.maincontainer .content {
+    margin-top: 80px;
+  }
+
+  .maincontainer .content h2 {
+     left: 200px;
+   }
+
+  .maincontainer .header input[type="checkbox"]:checked ~ul {
+    transform: rotateY(0deg);
+  }
+}
+
+@media (max-width:890px) {
+  .maincontainer .content h2 {
+    left: 200px;
+
+  }
+    .maincontainer .content .bground .txt {
+    left:100px;
+    color: white;
+  }
+
+  /* .maincontainer .bground {
+    width: 20px;
+    height: 100px;
+    background-size: 10px 10px;
+  } */
+
+  .maincontainer .content .banner2 {
+    /* position: absolute; */
+    margin-top: 150px;
+  }
+}
+
+@media (max-width:720px) {
+  .maincontainer .header label i{
+  left: 400px;
+  top: 35px;
+}
+
+.maincontainer .header ul li  a{
+  padding-left: 180px;
+}
+
+ .maincontainer .content .banner .p1{
+   bottom: 30px;
+   padding-bottom: 100px;
+  }
+
+ .maincontainer .content .banner2 {
+    margin-top: 250px;
+  }
+}
+
+    
+ 
+
+
